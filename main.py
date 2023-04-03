@@ -45,7 +45,7 @@ if __name__ == '__main__':
     \headsep=0.25in
 
     \title{ MATH3161 - Optimisation}
-    \author{ Generatively made exam by Stephen Lerantges }
+    \author{ Generatively made exam by Moae }
 
     \begin{document}
     \maketitle
