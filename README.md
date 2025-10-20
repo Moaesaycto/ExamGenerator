@@ -7,7 +7,7 @@ Small generator for mathematical optimisation exam-style questions; emits a `.te
 
 ## What's in the repo (by module)
 
-* `conjugate_grad_method.py**: Quadratic minimisation with **conjugate gradient (Fletcher–Reeves)** prompts and proof checks. 
+* `conjugate_grad_method.py`: Quadratic minimisation with **conjugate gradient (Fletcher–Reeves)** prompts and proof checks. 
 * `newtons_method.py`: Strictly convex quadratic tasks with **Newton direction** verification and convergence runs. 
 * `steepest_descent.py`: SPD checks, steepest-descent solver and a deterministic ratio helper for iteration analysis. 
 * `equality_constraints.py`: KKT **regularity / FONC / SOSC** questions for 2–3 variables with linear or circular constraints. 
@@ -23,3 +23,4 @@ Small generator for mathematical optimisation exam-style questions; emits a `.te
 
 * Output is LaTeX; render locally; rerun until no warnings if randomness breaks a case, especially some induction templates.
 * Code is a proof-of-concept, not fully polished; correctness is not guaranteed across all seeds (your stated caveat).
+
