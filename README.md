@@ -1,7 +1,25 @@
-<h1>MATH3161 Exam Generator</h1>
+# **MATH3161 Exam Generator**
 
-This project contains a simple examination generator for mathematical optimisation problems that I studied in university. I found that a lot of the course work I was doing was quite repetitive, so I decided to stick it to the man and make a program that generates problems for me. I did this to both learn how to actually solve these problems while also wanting to make a point about how a lot of undergrad mathematics courses are just repetitive and don't require any creativity.
+**Type:** Scripted TeX Generator · **Tech:** Python, NumPy, LaTeX · **Status:** Completed
 
-The program generates a `tex` file, so you'll need to render it yourself. Also, I recommend running this code until no errors or warnings are printed. Usually takes around five to ten attempts but might take more. This is because of the induction question and I cannot be bothered fixing it.
+## **Overview:**
+Small generator for mathematical optimisation exam-style questions; emits a `.tex` paper you render yourself; expect occasional warnings due to some randomised question templates.
 
-Please note that the code in this repository is not polished. I can't guarantee that the exams shown on this are fully correct and work every time. I haven't even properly studied all the topics in this test by the time of uploading this, so please don't have high hopes this was just a proof of concept.
+## What's in the repo (by module)
+
+* `conjugate_grad_method.py**: Quadratic minimisation with **conjugate gradient (Fletcher–Reeves)** prompts and proof checks. 
+* `newtons_method.py`: Strictly convex quadratic tasks with **Newton direction** verification and convergence runs. 
+* `steepest_descent.py`: SPD checks, steepest-descent solver and a deterministic ratio helper for iteration analysis. 
+* `equality_constraints.py`: KKT **regularity / FONC / SOSC** questions for 2–3 variables with linear or circular constraints. 
+* `kuhn_tucker.py`: Region sketching + convexity check + **Kuhn–Tucker** conditions with a given candidate (x^*). 
+* `wolfe_dual.py`: Forms the **Wolfe dual** where applicable; otherwise asks to prove non-convexity. 
+* `definiteness.py`: Random matrix → classify as PD/ND/PSD/NSD/indefinite via eigenvalues. 
+* `matrix_proof.py`: Assorted linear-algebra proof prompts (idempotent, nilpotent, symmetry, PD facts). 
+* `stationary.py`: Stationary-point problems (econ-flavoured maxima/minima and envelopes). 
+* `maxmin.py`: General multivariate polynomial generator; **find and classify all stationary points**. 
+* `concavity.py`: Hand-picked convexity/concavity questions with external solution links (listed in your message).
+
+### Notes
+
+* Output is LaTeX; render locally; rerun until no warnings if randomness breaks a case, especially some induction templates.
+* Code is a proof-of-concept, not fully polished; correctness is not guaranteed across all seeds (your stated caveat).
