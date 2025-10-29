@@ -5,6 +5,8 @@
 ## **Overview:**
 Small generator for mathematical optimisation exam-style questions; emits a `.tex` paper you render yourself; expect occasional warnings due to some randomised question templates.
 
+You can see a sample of this paper [here](sample.pdf) or in `sample.pdf` in the above repository.
+
 ## Modules Assessed
 
 * `conjugate_grad_method.py`: Quadratic minimisation with **conjugate gradient (Fletcher–Reeves)** prompts and proof checks. 
